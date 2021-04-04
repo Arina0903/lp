@@ -13,6 +13,12 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('/cuc', 'xachController@getxach');
+Route::post('/cuc', 'xachController@store');
+Route::put('/cuc', 'xachController@izmenit');
+
+Route::get('/zxzx', 'userController@getuser');
+//Route::post('/zxzx', 'userController@stor');
+Route::post('/zxzx', 'userController@sto');
+
+
