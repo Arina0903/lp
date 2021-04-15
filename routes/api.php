@@ -18,7 +18,10 @@ Route::post('/cuc', 'xachController@store');
 Route::put('/cuc', 'xachController@izmenit');
 
 Route::get('/zxzx', 'userController@getuser');
-//Route::post('/zxzx', 'userController@stor');
-Route::post('/zxzx', 'userController@sto');
-
+Route::post('/zxzx', 'userController@vali');
+Route::post('/zxz', 'userController@val');
+Route::get('getproducts', 'productController@getProducts');
+Route::post('addproducts', 'productController@postProducts');
+Route::delete('delproducts', 'productController@deleteProducts');
+Route::post('logout', 'userController@logout');
 
